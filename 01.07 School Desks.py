@@ -7,9 +7,9 @@ def desks(s):
 
 
 #taking number of students in each class
-a=int(input())
-b=int(input())
-c=int(input())
+a=int(input("Students in class A:"))
+b=int(input("Students in class B:"))
+c=int(input("Students in class C:"))
 
 
 #calling function

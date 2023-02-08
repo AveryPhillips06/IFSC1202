@@ -12,10 +12,10 @@ cout<<"\nEnter Third number: ";
 cin>>c;
 
 if((a==b) && (a!=c))
-cout<<"3";
+    cout<<"3";
 else if:((a==c) && (a!=b))
-cout<<"2";
+    cout<<"2";
 else:
-cout<<"1";
+    cout<<"1";
 return 0;
 }

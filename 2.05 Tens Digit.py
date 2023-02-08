@@ -1,4 +1,4 @@
-#program to print tens digit of a number
+#tens digit
 n=input('Enter a Number : ');
-tensDigit=(int(n)/10)%10; #converting n to int
-print('Tens Digint: ', format(int(tensDigit))) #converting float to int and int to .format
+tensDigit=(int(n)/10)%10;
+print('Tens Digint: ', format(int(tensDigit))) 

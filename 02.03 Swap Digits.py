@@ -4,3 +4,4 @@ number = int(input("Enter a number:"))
 b = int(number%10)
 a = int(number%100//10)
 print(b,a)
+

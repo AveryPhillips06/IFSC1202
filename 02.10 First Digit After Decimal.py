@@ -1,7 +1,9 @@
-number = float(input("Enter a number:"))
-#print(number%10)
-#print(number%100//10)
-#b = int(number%10)
-a = int(number%1/10)
-#c = int(number%1000//100)
-print(a)
+num = float(input("Enter a Number: "))
+whole = int(num)
+frac = num - whole
+
+dec = (round (frac,100))
+ten =(dec * 10)
+tenth = int(ten)
+print(tenth)
+

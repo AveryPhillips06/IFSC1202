@@ -4,6 +4,6 @@ C = int(input("Enter point C:"))
 D = int(A-B)
 E = int(A-C)
 if(D>E):
-print(E)
+    print(E)
 else:
-print(D)
+    print(D)

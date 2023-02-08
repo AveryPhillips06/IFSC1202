@@ -1,18 +1,18 @@
 #Minimum of Three
 a = int(input("Enter Number first:"))
 b = int(input("Enter Number second:"))
-C = int(input("Enter Number Third:"))
-def maximum(a, b, c):
+c = int(input("Enter Number Third:"))
+def min(a, b, c):
  
-    if (a >= b) and (a >= c):
-        largest = a
+    if (a < b) and (a <c):
+        smallest = a
  
-    elif (b >= a) and (b >= c):
-        largest = b
+    elif (b < a) and (b < c):
+        smallest = b
     else:
-        largest = c
+        smallest = c
          
-    return largest
+    return smallest
  
  
-print(maximum(a, b, c))
+print(min(a, b, c))

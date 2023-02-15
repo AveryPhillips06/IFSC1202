@@ -1,21 +1,9 @@
-#include <stdio.h>
-
-int main(){
-int num,i,count;
-
-for(num = 2;num<=100;num++){
-count = 0;
-
-for(i=2;i<=num/2;i++){
-if(num%i==0){
-count++;
-break;
-}
-}
-
-if(count==0 && num< 20)
-printf("%d ",num);
-}
-
-return 0;
-}
+A = int(input("Enter A: "))
+B = int(input("Enter B: "))
+for i in range(A, B + 1):
+    if i > 1:
+        for j in range(2, int(i / 2) + 1):
+            if (i % j) == 0:
+                break
+        else:
+            print(i)

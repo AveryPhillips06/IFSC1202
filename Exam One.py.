@@ -5,18 +5,18 @@ print("Well:", (name), "Lets play a game:")
 print("I am thinking of a number between 1 & 20:")
 from random import randint
 randomNum= randint(1,20)
-WinFlag=False
+Win=False
 for i in range(1,4): ##3 Tries
-    GuessedNum = input("Guess the Number(from 1 to 20):")
-if GuessedNum == randomNum:
-         WinFlag=True
-    #break
-elif GuessedNum>randomNum:
+    Guess = input("Guess the Number(from 1 to 20):")
+if Guess == randomNum:
+        Win=True
+        break
+elif Guess>randomNum:
     print("Your guess is too high...")
-elif GuessedNum<randomNum:
+elif Guess<randomNum:
     print("Your guess is too low...")
 ##Winner
-if WinFlag==False :
+if Win==False :
     print("\nComputer Win!!!")
 else:
     print("\nCorrect guess...You Win!!!")

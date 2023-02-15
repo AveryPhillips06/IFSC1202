@@ -1,5 +1,4 @@
-number = int(input("Enter Number: "))
-fact = 1
-for i in range(1,number+1):
-    fact = fact*i
-print(fact)
+A = int(input("Enter A: "))
+B = int(input("Enter B: "))
+for i in range(A,B+1):
+    print("{}*{}={}".format(i,i,i*i))

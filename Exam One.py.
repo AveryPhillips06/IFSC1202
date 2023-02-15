@@ -19,4 +19,4 @@ for i in range(1,6): ##5 Tries
 if Win==False :
     print("\nComputer Win!!!")
 else:
-    print("\nGood Job, (name)!You Win!!!")
+    print("\nGood Job:", (name),"You Win!!!:")

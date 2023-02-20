@@ -4,8 +4,8 @@ def main():
 
     file=open("Radius.txt")
 
-    radiusData=file.readlines()
-
+    radiusData = file.readlines()
+ 
     header=['Radius','Diameter','Circumference','Area']
 
     file.close()

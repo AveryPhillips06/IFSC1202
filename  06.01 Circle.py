@@ -12,19 +12,19 @@ def main():
 
     result=[]
 
-for radius in radiusData:
+    for radius in radiusData:
 
-    radius=float(radius)
+        radius=float(radius)
 
-    diameter=format(2*radius,'.5f')
+        diameter=format(2*radius,'.5f')
 
-    circumference=format(2*pi*radius,'.5f')
+        circumference=format(2*pi*radius,'.5f')
 
-    area=format(2*pi*(radius**2),'.5f')
+        area=format(2*pi*(radius**2),'.5f')
 
-    radius=format(radius,'.5f')
+        radius=format(radius,'.5f')
 
-    result.append([radius,diameter,circumference,area])
+        result.append([radius,diameter,circumference,area])
 
 format_row = "{:>15}" * (len(header) + 1)
 

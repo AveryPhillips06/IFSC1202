@@ -9,4 +9,4 @@ for F in file: #loop for data in file
     f.close() #closes the file
     records = records + 1 #increase records by 1
 
-print(str(records)+" records written") #final output
+print(str(records)+" records written") 

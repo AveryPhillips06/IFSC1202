@@ -1,49 +1,37 @@
-import math
+from math import pi
 
-# diameter method
-# accept the radius as a parameter
-# and returns the diameter of the circle
-def diameter(radius):
-    return radius * 2
-
-# circumference mehtod
-# accept the radius as a parameter
-# and returns the circumference of the circle
-def circumference(radius):
-    return 2 * math.pi * radius
-
-
-# area method
-# accept the radius as a parameter
-# and returns the area of the circle
-def area(radius):
-    return math.pi * radius * radius
-
-
-# main method
 def main():
 
-    # open a file to read
-    file1 = open("06.01 Radius.txt","r")
+    file=open("Radius.txt")
 
-    # create a empty list to store all the radius from the file
-    lst = []
+    radiusData=file.readlines()
 
-    # infinite while loop
-    # to read line by line from the file
-    while True:
-        line = file1.readline()
-        if not line:
-            break
-        else:
-            lst.append(float(line))
+    header=['Radius','Diameter','Circumference','Area']
 
-    # print the radius diameter , circumference and area of the circle
-    print("{:>15} {:>15} {:>15} {:>15}".format("Radius","Diameter","Circumference","Area"))
-    for radius in lst:
-        print("{:>15.5f} {:>15.5f} {:>15.5f} {:>15.5f}".format(radius,diameter(radius),circumference(radius),area(radius)))
+    file.close()
 
+    result=[]
 
+    for radius in radiusData:
 
-if __name__ == "__main__":
-    main()
+        radius=float(radius)
+
+diameter=format(2*radius,'.5f')
+
+circumference=format(2*pi*radius,'.5f')
+
+area=format(2*pi*(radius**2),'.5f')
+
+radius=format(radius,'.5f')
+
+result.append([radius,diameter,circumference,area])
+
+format_row = "{:>15}" * (len(header) + 1)
+
+print(format_row.format("", *header))
+
+for team, row in zip(header, result):
+
+    print(format_row.format("", *row))
+
+main()

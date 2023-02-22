@@ -1,4 +1,4 @@
-file = open("06.03 FTemps.txt", "r") #opens file 06.03 FTemps.txt to read
+file = open("06.03 FTemps.txt") #opens file 06.03 FTemps.txt to read
 records = 0 #initializing the variable records to zero
 for F in file: #loop for data in file
     C = (float(F) - 32)*5/9 #convert fahrenheit to celsius

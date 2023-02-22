@@ -18,10 +18,10 @@ def isPrime(number):
 
 
 #main driver program
-inputFile = open("numbers.txt","r")
-outputEven = open("evennumbers.txt","w+")
-outputOdd = open("oddnumbers.txt","w+")
-outputprime = open("primenumbers.txt","w+")
+inputFile = open("06.06 Numbers.txt")
+outputEven = open("6.6 Evennumbers.txt","w+")
+outputOdd = open("6.6 Oddnumbers.txt","w+")
+outputprime = open("6.6 Primenumbers.txt","w+")
 
 #iterate over lines in n umbers.txt
 for line in inputFile:

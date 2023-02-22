@@ -1,6 +1,6 @@
 
-f1 = open("06.05CompareFileA.txt")
-f2 = open("06.05CompareFileB.txt")
+f1 = open("06.05 CompareFileA.txt")
+f2 = open("06.05 CompareFileB.txt")
 lst1 = [] 
 lst2 = []
 for l in f1:

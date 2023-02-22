@@ -1,1 +1,4 @@
-Hello!\nWelcome to demofile.txt\nThis file is for testing purposes.\nGood Luck!
+Hello!\n
+Welcome to demofile.txt\n
+This file is for testing purposes.\n
+Good Luck!

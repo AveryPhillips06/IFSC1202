@@ -46,7 +46,7 @@ def MiddleName(s):
 def main():
 
     # opening the file named Names.txt in read mode
-    file = open('Names.txt', 'r')
+    file = open('07.11 Names.txt', 'r')
 
     # read all lines of file
     names = file.readlines()

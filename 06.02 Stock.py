@@ -3,7 +3,7 @@ inputFile = open("06.02 Stock.txt")
 data = inputFile.read()
 data = [float(i) for i in data.split()]
 
-print("Price Change")
+print("Price   Change")
 print(data[0])
 
 for i in range(1,len(data)):

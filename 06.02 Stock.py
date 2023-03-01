@@ -1,13 +1,16 @@
 
 inputFile = open("06.02 Stock.txt")
-data = inputFile.read()
-data = [float(i) for i in data.split()]
-
+data = float(inputFile.readline())
 print("Price   Change")
-print(data[0])
+print(data)
+yesterday = data
 
-for i in range(1,len(data)):
+data = float(inputFile.readline())
+while data != "":
+    data = float(data)
+    percentage = ((data - yesterday)/yesterday) * 100
+    print("{:.2f} {:+.2f}%".format(data,percentage))
+    yesterday = data
+    data = inputFile.readline()
 
-    percentage = ((data[i] - data[i-1])/data[i-1]) * 100
-
-print("{:.2f} {:+.2f}%".format(data[i],percentage))
+    

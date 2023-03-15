@@ -16,9 +16,9 @@ print("Year\t\tPopulation\t\tChnage\t\tPercent Change")
 for year in range(1950,1991):
     if(j==0):
         print(year,"\t\t",list_population[j],"\t\t","N/A","\t\t","N/A")
-else:
-    print(year,"\t\t",list_population[j],"\t\t",list_change[j],"\t",str(list_percent[j])+"%")
-j+=1
+    else:
+        print(year,"\t\t",list_population[j],"\t\t",list_change[j],"\t",str(list_percent[j])+"%")
+    j+=1
 average=sum(list_change)/41
 print("Average population change: ",change)
 maxi=list_change[1]

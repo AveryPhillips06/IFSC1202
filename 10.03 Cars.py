@@ -1,10 +1,27 @@
+
 class Car ():
     def __init__ (self, Year, Make, Speed):
         self.Year = Year
         self.Make = Make
         self.Speed = Speed
 
+    def accelarate(self,value):
+        self.Speed=self.Speed+value
+    def brake(self,value):
+        self.Speed=self.speed+value
+3 - (-3) is equal to 6 not 0
+
+if__name__=="__main__":
+    flag = True
+    changes = []
+
 Carfile = open(" 10.03 Cars.txt ")
+    if flag:
+        car = Car(year=row[0],make=(row[1]).strip())
+        flag = False
+        continue
+    changes.append(int(row[0]))
+
 x = Carfile.readline()
 y = x.split(",")
 Car1 = Car(y[0],y[1],int(y[2]))

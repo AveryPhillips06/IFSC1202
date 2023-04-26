@@ -43,4 +43,3 @@ for t in TriangleList:
     p = "{:.3f}".format(t.perimeter())
     a = "{:.3f}".format(t.area())
     angles = [ "{:.3f}".format(angle) for angle in t.angles() ]
-    print(f"{ttype}\t{s1}\t{s2}\t{s3}\t\t{p}\t\t{a}\t{angles[0]}\t\t{angles[1]}\t\t{angles[2]}")

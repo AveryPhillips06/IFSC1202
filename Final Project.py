@@ -1,6 +1,6 @@
-# Define a class for individual vending machine items
+
 class VendingItem(object):
-    # Initialize the item with its name, initial count, and cost per item
+    
     def __init__(self, Name, InitialCount, CostPerItem):
         self.Name = Name
         self.InitialCount = InitialCount
@@ -16,11 +16,11 @@ class VendingItem(object):
 
     def LostValue(self):
         return self.LostCount * self.CostPerItem
-# Define a class for a list of vending items
+
 
 
 class VendingList:
-    # Initialize the list with a name and empty lists for the items and sales data
+    
     def __init__(self, Name):
         self.Name = Name
         self.Vendinglist = []
@@ -33,20 +33,20 @@ class VendingList:
         self.VendingTotalLostValue = 0
         self.VendingTotalLostCount = 0
 
-    # Load items from a file and add them to the list
+   
     def load_vending_items_from_file(self, filename):
-        input1 = open(filename, "r")
+        input1 = open("Final Project Vending.txt," "r")
         ListofLines = input1.readlines()
         input1.close()
         for line in ListofLines:
             tmplist = line.split()
-            # Create a new VendingItem object with the values and add it to the list
+            
             v1 = VendingItem(tmplist[0], int(tmplist[1]), float(tmplist[2]))
             self.VendingTotalInitialValue += v1.InitialValue()
             self.VendingTotalInitialCount += v1.InitialCount
             self.Vendinglist.insert(len(self.Vendinglist), v1)
 
-    # Print out the list of vending items and their associated data (initial count, sold count, lost count, etc.)
+    
     def print_vending(self):
         print('\tInitial\tPrice\tInitial\tSold\tSold\tLost\tLost')
         print('Product\tCount\tPerItem\tValue\tCount\tValue\tCount\tValue\n')
@@ -64,7 +64,7 @@ class VendingList:
                 return index
         return index
 
-    # Update the vending list based on a sale of a specific product
+   
     def update_vending(self, productname):
         index = self.find_product(productname)
         if index != -1:
@@ -81,8 +81,8 @@ class VendingList:
 
 if __name__ == "__main__":
     list1 = VendingList("drinks")
-    list1.load_vending_items_from_file("Vending.txt")
-    input1 = open("Sales.txt", "r")
+    list1.load_vending_items_from_file("Final Project Vending.txt")
+    input1 = open("Final Project Sales.txt", "r")
     ListofLines = input1.readlines()
     input1.close()
     for line in ListofLines:
